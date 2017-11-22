@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+    </head>
+    <body class="container">
+
+        <h2><p class="bg-success formaContenedor container">StartApps</p></h2>
+
+
+
+        <table id="tabla1" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>   </th>
+                    <th>   </th>
+                </tr>
+            </thead>
+            <tbody id="tablaDe">
+
+
+                <tr>
+
+
+                    <td ><h4>Proyectos              </h4></td>
+                    <td>
+                        <form method="POST" action="listaProyectosServlet" accept-charset="UTF-8">
+                            <button type="submit" id="n" class="btn btn-success">Ver 
+                                <span  class="fa fa-search-plus" aria-hidden="true"></span></button>
+                        </form>
+
+                        <form method="POST" action="proyectoServlet" accept-charset="UTF-8">
+                            <button type="submit" id="btnSaveIncidencia" class="btn btn-success">añadir 
+                                <span  class="fa fa-plus" aria-hidden="true"></span></button></form>
+                              
+
+                    </td>
+                </tr>
+                <tr>
+
+
+                    <td ><h4>Empleados              </h4></td>
+                    <td>
+                          <form method="POST" action="listaEmpleadosServlet" accept-charset="UTF-8">
+                        <button type="submit" id="btnSaveIncidencia" class="btn btn-success">Ver 
+                            <span  class="fa fa-search-plus" aria-hidden="true"></span></button></form>
+                              <form method="POST" action="empleadosServlet" accept-charset="UTF-8">
+                        <button type="submit" id="empleadoServlet" class="btn btn-success">añadir 
+                            <span  class="fa fa-plus" aria-hidden="true"></span></button></form>
+                              <form method="POST" action="incidenciaServlet" accept-charset="UTF-8">
+                        <button type="submit" id="btnSaveIncidencia" class="btn btn-success">Eliminar 
+                            <span  class="fa fa-remove" aria-hidden="true"></span></button></form>
+
+                    </td>
+                </tr>
+                <tr>
+
+
+                    <td ><h4>Clientes</h4></td>
+                    <td><form method="POST" action="listaClientesServlet" accept-charset="UTF-8">
+                            
+                        <button type="submit" id="btnSaveIncidencia" class="btn btn-success">Ver
+                            
+                                 <span  class="fa fa-search-plus" aria-hidden="true"></span></button> </form>
+                        <form method="POST" action="clienteServlet" accept-charset="UTF-8">
+                        <button type="submit" id="btnSaveIncidencia" class="btn btn-success">añadir 
+                            <span  class="fa fa-plus" aria-hidden="true"></span></button> </form>
+                        <button type="submit" id="btnSaveIncidencia" class="btn btn-success">eliminar 
+                            <span  class="fa fa-remove" aria-hidden="true"></span></button>
+
+                    </td>
+                </tr>
+                </div>
+                </div>
+
+
+
+            </tbody>
+        </table>
+    </body>
+</html>
